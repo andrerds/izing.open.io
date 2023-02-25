@@ -50,7 +50,7 @@ docker-compose -f "docker-compose.yml" up -d --build
 Após os containers estarem rodando, faça a carga de dados iniciais (apenas na primeira vez)
 
 ```
-docker-compose exec -it izing-backend  bash -c 'npx sequelize db:seed:all'    
+docker exec -it izing-backend  bash -c 'npx sequelize db:seed:all'    
 ```
 
 > Se tudo correu bem, acesse o sistema e faça login no link: [http://localhost:8080/#/login](http://localhost:8080/#/login).
